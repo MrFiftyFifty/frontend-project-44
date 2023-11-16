@@ -1,33 +1,29 @@
-import readline from 'readline-sync';
+import readlineSync from 'readline-sync';
 
-const ROUNDS = 3;
+const roundsTotal = 3;
 
-const startGame = (description, getRoundData) => {
+const startGame = (description, run) => {
   console.log('Welcome to the Brain Games!');
-
-  const playerName = readline.question('What is your name? ');
-
-  console.log(`Hello, ${playerName}!`);
-
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
   console.log(description);
-
-  for (let round = 1; round <= ROUNDS; round += 1) {
-    const { correctAnswer, question } = getRoundData();
-
+  for (let i = 0; i < roundsTotal; i += 1) {
+    const roundData = run();
+    const { correctAnswer, question } = roundData;
     console.log(`Question: ${question}`);
-
-    const answer = readline.question('Your answer: ');
-
+    const answer = readlineSync.question('Your answer: ');
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is the wrong answer ;(. The correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${playerName}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
-
-  console.log(`Congratulations, ${playerName}!`);
+  console.log(`Congratulations, ${name}!`);
 };
-
 export default startGame;
+
+export const getRandomNumber = (min, max) => Math.floor((Math.random() * (max - min + 1)) + min);
+
+export const isEven = (number) => number % 2 === 0;
