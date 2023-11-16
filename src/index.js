@@ -27,7 +27,7 @@ const startGame = (description, getRoundData) => {
     }
   }
 
-  console.log(`Congratulations ${playerName}!`);
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default startGame;
