@@ -27,7 +27,7 @@ $ brain-even
 
 #### Пример игры
 
-[![asciicast](https://asciinema.org/a/IKBkZVM72gydEEXVWId94aEne.svg)](https://asciinema.org/a/IKBkZVM72gydEEXVWId94aEne)
+[![asciicast](https://asciinema.org/a/621352.svg)](https://asciinema.org/a/621352)
 
 ## Игра: "Калькулятор"
 
@@ -41,4 +41,4 @@ $ brain-calc
 
 #### Пример игры
 
-[![asciicast](https://asciinema.org/a/bYNnpPLeYu68QrJlRL3TW3g5y.svg)](https://asciinema.org/a/bYNnpPLeYu68QrJlRL3TW3g5y)
+[![asciicast](https://asciinema.org/a/621342.svg)](https://asciinema.org/a/621342)
