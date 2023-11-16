@@ -13,9 +13,15 @@ const isPrime = (number) => {
 
 const getRoundData = () => {
   const randomNum = getRandomNumber(1, 100);
-  const correctAnswer = isPrime(randomNum) ? 'yes' : 'no';
-  const question = randomNum;
-  return { correctAnswer, question };
+
+  const isNumPrime = isPrime(randomNum);
+
+  const correctAnswer = isNumPrime ? 'yes' : 'no';
+
+  return {
+    question: randomNum,
+    correctAnswer,
+  };
 };
 
 const runGame = () => startGame(description, getRoundData);
