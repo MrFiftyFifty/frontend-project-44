@@ -84,3 +84,5 @@ $ brain-prime
 ```  
 
 #### Пример игры
+
+[![asciicast](https://asciinema.org/a/kNuUqVf7p2vrNqMgZLDDy0EOC.svg)](https://asciinema.org/a/kNuUqVf7p2vrNqMgZLDDy0EOC)
